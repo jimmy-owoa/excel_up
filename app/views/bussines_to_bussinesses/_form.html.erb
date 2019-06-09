@@ -1,0 +1,37 @@
+<%= form_with(model: bussines_to_bussiness, local: true) do |form| %>
+  <% if bussines_to_bussiness.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bussines_to_bussiness.errors.count, "error") %> prohibited this bussines_to_bussiness from being saved:</h2>
+
+      <ul>
+        <% bussines_to_bussiness.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :sales_by_period_cash %>
+    <%= form.number_field :sales_by_period_cash %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sales_by_period_units %>
+    <%= form.number_field :sales_by_period_units %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inventory_cash %>
+    <%= form.number_field :inventory_cash %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inventory_units %>
+    <%= form.number_field :inventory_units %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

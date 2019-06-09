@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bussines To Bussinesses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sales by period cash</th>
+      <th>Sales by period units</th>
+      <th>Inventory cash</th>
+      <th>Inventory units</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bussines_to_bussinesses.each do |bussines_to_bussiness| %>
+      <tr>
+        <td><%= bussines_to_bussiness.sales_by_period_cash %></td>
+        <td><%= bussines_to_bussiness.sales_by_period_units %></td>
+        <td><%= bussines_to_bussiness.inventory_cash %></td>
+        <td><%= bussines_to_bussiness.inventory_units %></td>
+        <td><%= link_to 'Show', bussines_to_bussiness %></td>
+        <td><%= link_to 'Edit', edit_bussines_to_bussiness_path(bussines_to_bussiness) %></td>
+        <td><%= link_to 'Destroy', bussines_to_bussiness, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bussines To Bussiness', new_bussines_to_bussiness_path %>

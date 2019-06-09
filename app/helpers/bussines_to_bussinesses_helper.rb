@@ -1,0 +1,2 @@
+module BussinesToBussinessesHelper
+end

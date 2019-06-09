@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sales_by_period_cash: 1
+  sales_by_period_units: 1
+  inventory_cash: 1
+  inventory_units: 1
+
+two:
+  sales_by_period_cash: 1
+  sales_by_period_units: 1
+  inventory_cash: 1
+  inventory_units: 1

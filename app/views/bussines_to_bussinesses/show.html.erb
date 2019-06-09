@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sales by period cash:</strong>
+  <%= @bussines_to_bussiness.sales_by_period_cash %>
+</p>
+
+<p>
+  <strong>Sales by period units:</strong>
+  <%= @bussines_to_bussiness.sales_by_period_units %>
+</p>
+
+<p>
+  <strong>Inventory cash:</strong>
+  <%= @bussines_to_bussiness.inventory_cash %>
+</p>
+
+<p>
+  <strong>Inventory units:</strong>
+  <%= @bussines_to_bussiness.inventory_units %>
+</p>
+
+<%= link_to 'Edit', edit_bussines_to_bussiness_path(@bussines_to_bussiness) %> |
+<%= link_to 'Back', bussines_to_bussinesses_path %>
